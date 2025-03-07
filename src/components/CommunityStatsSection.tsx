@@ -13,9 +13,10 @@ const CommunityStatsSection = () => {
         
         <div className="relative">
           <img 
-            src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=1080&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.0.3" 
             alt="Galaxy Watch 4 being used" 
             className="w-full h-[300px] object-cover rounded-lg"
+            loading="lazy"
           />
           
           <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-around">

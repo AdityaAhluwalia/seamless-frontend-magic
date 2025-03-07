@@ -4,17 +4,17 @@ import React from 'react';
 const CaseStudiesSection = () => {
   const caseStudies = [
     {
-      image: "https://images.unsplash.com/photo-1576846628882-27ed23c1186d?q=80&w=300&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1576846628882-27ed23c1186d?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3",
       title: "Healthcare",
       description: "How medical professionals use Galaxy Watch 4 to monitor patients"
     },
     {
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=300&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3",
       title: "Fitness Enthusiasts",
       description: "Tracking performance gains with Galaxy Watch 4"
     },
     {
-      image: "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=300&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3",
       title: "Everyday Use",
       description: "How Galaxy Watch 4 fits into daily life"
     }
@@ -32,6 +32,7 @@ const CaseStudiesSection = () => {
                 src={study.image} 
                 alt={study.title} 
                 className="w-full h-48 object-cover"
+                loading="lazy"
               />
               <div className="p-4">
                 <h3 className="font-semibold text-lg mb-2">{study.title}</h3>

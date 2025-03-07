@@ -13,6 +13,9 @@ const HeroSection = () => {
           <h1 className="text-white text-5xl font-bold mb-4">
             #AllNewGalaxyWatch4
           </h1>
+          <p className="text-white text-xl max-w-md">
+            Discover the next generation of wearable technology
+          </p>
         </div>
       </div>
     </section>

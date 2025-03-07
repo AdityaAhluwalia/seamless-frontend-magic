@@ -4,19 +4,19 @@ import React from 'react';
 const AboutSection = () => {
   const features = [
     {
-      image: "https://images.unsplash.com/photo-1575311373937-040b8e97df69?q=80&w=300&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1575311373937-040b8e97df69?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3",
       alt: "Person using Galaxy Watch while working out"
     },
     {
-      image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=300&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3",
       alt: "Galaxy Watch displaying fitness metrics"
     },
     {
-      image: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=300&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3",
       alt: "Person checking notifications on Galaxy Watch"
     },
     {
-      image: "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=300&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3",
       alt: "Close-up of Galaxy Watch features"
     }
   ];
@@ -34,13 +34,14 @@ const AboutSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {features.map((feature, index) => (
             <div key={index} className="overflow-hidden rounded-lg">
               <img 
                 src={feature.image} 
                 alt={feature.alt} 
                 className="w-full h-48 object-cover"
+                loading="lazy"
               />
             </div>
           ))}

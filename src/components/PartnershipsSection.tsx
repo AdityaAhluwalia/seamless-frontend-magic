@@ -4,17 +4,17 @@ import React from 'react';
 const PartnershipsSection = () => {
   const partners = [
     {
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/220px-Google_2015_logo.svg.png",
+      logo: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3",
       name: "Google",
       description: "Wear OS Partner"
     },
     {
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Strava_Logo.svg/1200px-Strava_Logo.svg.png",
+      logo: "https://images.unsplash.com/photo-1529612700005-e35377bf1415?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3",
       name: "Strava",
       description: "Fitness Tracking Partner"
     },
     {
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Adidas_Logo.svg/1200px-Adidas_Logo.svg.png",
+      logo: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3",
       name: "Adidas",
       description: "Athletic Wear Partner"
     }
@@ -31,7 +31,8 @@ const PartnershipsSection = () => {
               <img 
                 src={partner.logo} 
                 alt={`${partner.name} logo`} 
-                className="h-8 object-contain mx-auto mb-3"
+                className="h-20 w-20 object-cover mx-auto mb-3 rounded"
+                loading="lazy"
               />
               <h3 className="font-semibold text-sm">{partner.name}</h3>
               <p className="text-xs text-gray-500">{partner.description}</p>
