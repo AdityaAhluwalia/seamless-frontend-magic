@@ -21,21 +21,23 @@ const PartnershipsSection = () => {
   ];
 
   return (
-    <section className="py-16">
+    <section className="py-12 md:py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-semibold text-center mb-12">Our Technology Partners</h2>
+        <h2 className="text-2xl font-semibold text-center mb-8 md:mb-12">Our Technology Partners</h2>
         
-        <div className="flex justify-center items-center gap-10 flex-wrap">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
           {partners.map((partner, index) => (
-            <div key={index} className="text-center max-w-[200px]">
-              <img 
-                src={partner.logo} 
-                alt={`${partner.name} logo`} 
-                className="h-20 w-20 object-cover mx-auto mb-3 rounded"
-                loading="lazy"
-              />
-              <h3 className="font-semibold text-sm">{partner.name}</h3>
-              <p className="text-xs text-gray-500">{partner.description}</p>
+            <div key={index} className="text-center max-w-[200px] transition-transform hover:scale-105">
+              <div className="bg-gray-50 rounded-full p-4 mb-4 mx-auto w-24 h-24 flex items-center justify-center">
+                <img 
+                  src={partner.logo} 
+                  alt={`${partner.name} logo`} 
+                  className="h-16 w-16 object-cover rounded-full"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="font-semibold text-lg mb-1">{partner.name}</h3>
+              <p className="text-sm text-gray-600">{partner.description}</p>
             </div>
           ))}
         </div>

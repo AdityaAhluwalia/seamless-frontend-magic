@@ -1,12 +1,13 @@
 
 import React from 'react';
+import { ExternalLink } from 'lucide-react';
 
 const WorkingTogetherSection = () => {
   return (
-    <section className="py-16 text-center">
+    <section className="py-12 md:py-16 text-center">
       <div className="container mx-auto px-4">
         <div className="inline-block mb-4">
-          <span className="inline-block bg-yellow-400 rounded-full p-3">
+          <span className="inline-flex items-center justify-center bg-yellow-400 rounded-full p-3 w-14 h-14">
             <span className="text-2xl">👋</span>
           </span>
         </div>
@@ -14,8 +15,9 @@ const WorkingTogetherSection = () => {
         <p className="text-gray-600 max-w-2xl mx-auto mb-6">
           Partner with us to create compelling campaigns for the Samsung Galaxy Watch 4. We work with brands and agencies to develop integrated marketing strategies.
         </p>
-        <button className="text-samsung-blue font-medium underline">
+        <button className="inline-flex items-center text-samsung-blue font-medium hover:underline transition-all group">
           Let's talk about your project
+          <ExternalLink className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
         </button>
       </div>
     </section>

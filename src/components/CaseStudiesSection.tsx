@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { ArrowRight } from 'lucide-react';
 
 const CaseStudiesSection = () => {
   const caseStudies = [
@@ -21,13 +22,13 @@ const CaseStudiesSection = () => {
   ];
 
   return (
-    <section className="py-16">
+    <section className="py-12 md:py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-semibold text-center mb-10">More Case Studies</h2>
+        <h2 className="text-2xl font-semibold text-center mb-8 md:mb-10">More Case Studies</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {caseStudies.map((study, index) => (
-            <div key={index} className="rounded-lg overflow-hidden shadow-md">
+            <div key={index} className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
               <img 
                 src={study.image} 
                 alt={study.title} 
@@ -36,7 +37,11 @@ const CaseStudiesSection = () => {
               />
               <div className="p-4">
                 <h3 className="font-semibold text-lg mb-2">{study.title}</h3>
-                <p className="text-gray-600 text-sm">{study.description}</p>
+                <p className="text-gray-600 text-sm mb-3">{study.description}</p>
+                <div className="flex items-center text-samsung-blue font-medium text-sm hover:underline cursor-pointer">
+                  Read case study
+                  <ArrowRight className="ml-1 h-4 w-4" />
+                </div>
               </div>
             </div>
           ))}
